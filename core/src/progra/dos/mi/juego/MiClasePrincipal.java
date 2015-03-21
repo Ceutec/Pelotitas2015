@@ -16,8 +16,6 @@ public class MiClasePrincipal extends ApplicationAdapter {
     @Override
     public void create () {
         stage = new Stage();
-        stage.addActor(new MiActor());
-        stage.addActor(new MiActor2());
         stage.addActor(new Pelotita());
         Gdx.input.setInputProcessor(stage);
     }

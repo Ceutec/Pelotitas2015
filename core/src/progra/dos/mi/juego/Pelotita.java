@@ -12,4 +12,13 @@ public class Pelotita extends Image
     {
         super(new Texture("pelotita.png"));
     }
+
+    @Override
+    public void act(float delta)
+    {
+        float posicion_vieja = getX();
+        float posicion_nueva = posicion_vieja+1;
+        setX(posicion_nueva);
+        //setX(getX()+1);
+    }
 }
