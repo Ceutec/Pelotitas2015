@@ -18,6 +18,7 @@ public class PelotitaListener extends InputListener
     @Override
     public boolean touchDown(InputEvent event, float x, float y, int pointer, int button)
     {
+        MiClasePrincipal.ganaste.setVisible(true);
         pelotita.remove();
         return true;
     }
