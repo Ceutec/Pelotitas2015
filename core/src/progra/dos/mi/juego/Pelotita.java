@@ -1,6 +1,8 @@
 package progra.dos.mi.juego;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 
 /**
@@ -11,6 +13,8 @@ public class Pelotita extends Image
     Pelotita()
     {
         super(new Texture("pelotita.png"));
+
+        addListener(new PelotitaListener(this));
     }
 
     @Override
